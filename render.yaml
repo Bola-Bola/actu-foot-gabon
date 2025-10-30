@@ -13,4 +13,4 @@ services:
       - key: APP_KEY
         sync: false
       - key: APP_URL
-        value: https://actu-foot-gabon.onrender.com
+        value: https://actu-football-gabon.onrender.com
