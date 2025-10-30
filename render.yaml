@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: actu-foot-gabon
+    name: actu-football-gabon
     env: docker
     plan: free
     buildCommand: ""
