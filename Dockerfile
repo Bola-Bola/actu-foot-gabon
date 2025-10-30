@@ -1,14 +1,14 @@
 # Utilise une image PHP avec Apache
 FROM php:8.2-apache
 
-# Installe les extensions nécessaires à Laravel
+# Installe les extensions nécessaires à Laravel + PostgreSQL
 RUN apt-get update && apt-get install -y \
     git \
     zip \
     unzip \
     libpq-dev \
     libzip-dev \
-    && docker-php-ext-install pdo pdo_mysql zip
+    && docker-php-ext-install pdo pdo_pgsql zip
 
 # Active mod_rewrite pour Apache (important pour Laravel)
 RUN a2enmod rewrite
